@@ -1,0 +1,22 @@
+
+
+name: Validating checkout with shell script
+
+on: workflow_dispatch
+
+jobs:
+    files:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout the repo
+              uses: actions/checkout@v5
+
+            - name: display the content
+              run: cat devops.txt
+
+            - name: display the date
+              run: date
+
+            - name: execute the shell script
+              run: ./uptime.sh 
+        
