@@ -1,0 +1,29 @@
+
+
+name: First workflow
+
+on: 
+    push:
+        branches: [ main ]
+    workflow_dispatch:        # runs the workflow manually
+    
+jobs:
+    basic_demo:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Greetings
+              run: echo "Praise The Lord... Praveen ..."
+
+            - name: show linux version
+              run: uname -a
+
+            - name: list files in the current dir
+              run: ls -lrth
+
+            - name: show current user
+              run: whoami
+
+            - name: print date and time
+              run: date
+              
