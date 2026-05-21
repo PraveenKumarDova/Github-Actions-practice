@@ -12,4 +12,4 @@ jobs:
               run: echo "Praveen Kumar Dova" | tr "a-z" "A-Z"
 
             - name: word count
-              run: echo " The Lord is my Shepherd" | wc -l
+              run: echo " The Lord is my Shepherd" | wc -w
