@@ -15,7 +15,9 @@ jobs:
             - name: list files
               run: ls -lrth
 
+            - name: create a file
+              run: echo "Hi Hello" > sample.txt
+
             - name: display file content
               run: cat sample.txt
 
-              
