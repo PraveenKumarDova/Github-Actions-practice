@@ -1,0 +1,21 @@
+
+
+name: Show file content of checkout action
+
+on:
+    workflow_dispatch:
+
+jobs:
+    display:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: list files
+              run: ls -lrth
+
+            - name: display file content
+              run: cat sample.txt
+
+              
