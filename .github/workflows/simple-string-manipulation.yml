@@ -1,0 +1,15 @@
+
+
+name: Simple string manipulation
+
+on: [ push ]
+
+jobs:
+    strings:
+        runs-on: ubuntu-latest
+        steps:
+            - name: upper case conversion
+              run: echo "Praveen Kumar Dova" | tr "a-z" "A-Z"
+
+            - name: word count
+              run: echo " The Lord is my Shepherd" | wc -l
