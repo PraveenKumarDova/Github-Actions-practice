@@ -14,7 +14,8 @@ jobs:
 
             - name: set and print custom envt
               run: |
-              MYNAME = "Praveen"
-              echo "My name is $MYNAME"
+                MYNAME = "Praveen"
+                echo "My name is $MYNAME"
+              
 
             
