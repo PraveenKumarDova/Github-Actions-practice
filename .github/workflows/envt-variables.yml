@@ -1,0 +1,20 @@
+
+
+name: Environment variables
+
+on: [ push ]
+
+jobs:
+    envt-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: print pre-defined envt 
+              run: echo " Repo name is $GITHUB_REPOSITORY"
+
+            - name: set and print custom envt
+              run: |
+              MYNAME = "Praveen"
+              echo "My name is $MYNAME"
+
+            - name: 
