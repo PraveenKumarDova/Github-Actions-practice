@@ -1,0 +1,21 @@
+
+name: Print System Information
+
+on: [ push ]
+
+jobs:
+    info:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Print hostname
+              run: hostname 
+
+            - name: Kernel info
+              run: uname -r
+
+            - name: display OS info
+              run: cat /etc/os-release
+
+              
+    
