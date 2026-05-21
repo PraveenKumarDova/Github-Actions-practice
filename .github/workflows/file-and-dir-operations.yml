@@ -1,0 +1,20 @@
+
+
+name: File and dir operations
+
+on: [ push ]
+
+jobs:
+    file_operations:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: create a file
+              run: echo " Thank you Lord Jesus Christ my Saviour" > file1.txt
+
+            - name: display file content
+              run: cat file1.txt
+
+            - name: list the files
+              run: ls -lrth
+              
