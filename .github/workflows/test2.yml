@@ -1,0 +1,25 @@
+
+
+name: File operations in Github
+
+on: push
+
+jobs:
+    files:
+        runs-on: ubuntu-latest
+        steps:
+            - name: create a file
+              run: echo "Praise The Lord,God bless you..." >> file1.txt
+
+            - name: display the content of the file file1.txt
+              run: cat file1.txt
+
+            - name: display the date
+              run: date
+
+            - name: display the files and dirs
+              run: ls -lrt 
+
+            - name: display the current location
+              run: pwd 
+            
