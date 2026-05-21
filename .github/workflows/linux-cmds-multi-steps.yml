@@ -1,0 +1,22 @@
+
+
+name: Multiple steps with linux commands
+
+on: [ push ]
+
+jobs:
+    linux_commands:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Step 1 - pwd
+              run: pwd
+
+            - name: Step 2 - whoami
+              run: whoami
+
+            - name: Step 3 - System date
+              run: date
+
+            - name: Step 4 - Disk usage
+              run: df -h 
