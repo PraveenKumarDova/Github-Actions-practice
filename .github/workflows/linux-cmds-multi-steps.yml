@@ -7,7 +7,6 @@ on: [ push ]
 jobs:
     linux_commands:
         runs-on: ubuntu-latest
-
         steps:
             - name: Step 1 - pwd
               run: pwd
