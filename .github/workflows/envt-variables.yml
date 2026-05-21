@@ -17,4 +17,4 @@ jobs:
               MYNAME = "Praveen"
               echo "My name is $MYNAME"
 
-            - name: 
+            
